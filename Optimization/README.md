@@ -21,7 +21,7 @@
 
 9. Run `mkdir output metrics`, and `sbatch find_runtime_metrics.sh`. `find_runtime_metrics.sh` will generate six indicators of algorithm convergence. It runs multiple jobs in parallel.
     + If you want to speed up the process of calculating `run_time_metrics.sh`, you use `WFG2` algorithm (copy the [WFG](https://github.com/MOEAFramework/Hypervolume) folder to your directory).
-    +  Compile the `WFG2` by using `make` and then copy `wfg2` to your directory (You may need chmod 755 wfg2 to get permission from your machine).
+    +  Compile the `WFG2` by using `make` and then copy `wfg2` to your directory (You may need `chmod 755 wfg2` to get permission from your machine).
     +  Download global.properties from here and copy to your directory. Insert the following two lines in global.properties: 
         +  `org.moeaframework.core.indicator.hypervolume = ./wfg2 {2}` 
         +  `org.moeaframework.core.indicator.hypervolume_inverted = true`
