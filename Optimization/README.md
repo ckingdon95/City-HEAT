@@ -1,4 +1,10 @@
-`cd` into the new  `/Optimization` folder in your HPC. First, run `mkdir sets runtime` to create two folders to save the output from the optimization. Ensure that the following files are also in the `Optimization` directory: `find_refSets.sh`, `find_runtime_metrics.sh`, `get_objs.sh`, and `JobSub.sh`. Edit`JobSub.sh` to setup the number of seeds (`line 15`, currently is {1..10} for 10 seeds) and number of function evaluation(`line 17`, currently is 200000 function evaluations) to use. 
+`cd` into the new  `/Optimization` folder in your HPC. First, run `mkdir sets runtime` to create two folders to save the output from the optimization. 
+Ensure that the following files are also in the `Optimization` directory: 
+`find_refSets.sh` \\ 
+`find_runtime_metrics.sh` \\ 
+`get_objs.sh` \\ 
+`JobSub.sh`. 
+Edit`JobSub.sh` to setup the number of seeds (`line 15`, currently is {1..10} for 10 seeds) and number of function evaluation(`line 17`, currently is 200000 function evaluations) to use. 
 
 Then run `sbatch JobSub.sh` to submit your MOEA job (UrbanHeatMPI from last step) to the HPC and wait for the completion (may take several hours). Once the job is finished, x (x = number of seeds set in the previous step) output files are generated in the `sets` and `runtime` folders with the name of `UrbanHeat_Sx.txt` and `UrbanHeat_Sx.runtime`, where x is the number of seeds. 
 
