@@ -14,8 +14,8 @@ all: UrbanHeatMPI
 UrbanHeatMPI: UrbanHeat.o borgms.o mt19937ar.o
 	$(CXX) UrbanHeat.o borgms.o mt19937ar.o -o UrbanHeatMPI
 
-UrbanHeat.o: UHMOEA_ms_ma.cpp ./Borg-1.9/borgms.h
-	$(CXX) $(CXXFLAGS) $(INC) UHMOEA_ms_ma.cpp -o UrbanHeat.o
+UrbanHeat.o: UHMOEA_ms.cpp ./Borg-1.9/borgms.h
+	$(CXX) $(CXXFLAGS) $(INC) UHMOEA_ms.cpp -o UrbanHeat.o
 
 #moeaframework.o: ./../borg/moeaframework.c ./../borg/moeaframework.h
 #	$(CXX) $(CXXFLAGS) ./../borg/moeaframework.c
