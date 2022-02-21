@@ -659,7 +659,7 @@ int main(int argc, char* argv[]) {
 	}
 
 	ifstream infile2;
-	infile2.open("./../../Data/temp20192039.txt");
+	infile2.open("./../../Data/temp20202039.txt");
 		if (!infile2) {
 		perror("Error");
 	}
