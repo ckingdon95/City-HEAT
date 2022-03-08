@@ -19,7 +19,7 @@ Demographic data from [American Community Survey]( https://www.census.gov/progra
 Temperature data from [JHU monitoring practice]( https://journals.ametsoc.org/view/journals/apme/56/1/jamc-d-16-0232.1.xml) (column 7) \
 Land use data from [Chesapeake Phase 6 land use data]( https://www.chesapeakeconservancy.org/conservation-innovation-center/high-resolution-data/land-use-data-project/) (columns 1 & 8-12) \
 
-Each row is for disctrt `Central`, `Downtown`, `East`, `North`, `Northeast`, `Northwest`, `South`, `Southeast`, `Southwest`, `Southwest Partnership`, and `West` respectively. 
+Each row is for district `Central`, `Downtown`, `East`, `North`, `Northeast`, `Northwest`, `South`, `Southeast`, `Southwest`, `Southwest Partnership`, and `West` respectively. 
 
 
 2. `Scenarios.txt` and `RE_Scenarios.txt` contain the values of uncertain parameters for 1,500 optimization scenarios and 3,300 re-evaluation scenarios. 
