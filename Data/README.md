@@ -1,4 +1,4 @@
-`Data` folder contains all inputs used in the paper for Baltimore. Users need to prepare these datasets for the city of thier interests.
+`Data` folder contains all inputs used in the paper for Baltimore. Users need to prepare these datasets for the city of their interests.
 
 1. `District.txt` contains information for 11 Planning Districts in Baltimore City, each column means:
 
