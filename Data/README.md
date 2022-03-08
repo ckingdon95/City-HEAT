@@ -11,7 +11,7 @@
   * column 7.  Temperature deviation of district 
   * column 8.  Tree canopy coverage (%) 
   * column 9.  Roof area percentage (%) 
-  * column 10.  Rood area percentage (%)
+  * column 10.  Road area percentage (%)
   * column 11. Grass lands for tree planting (%)
   * column 12. Impervious surface (excluding Road & Roof) area percentage (%)
 
