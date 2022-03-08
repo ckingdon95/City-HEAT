@@ -9,6 +9,8 @@ Shi, R., Hobbs, B., Quinn, D., Knopman, D., Lempert, R. (2021). City-Heat Equity
 
 Intended for use with the MOEAFramework, Borg and pareto.py. Licensed under the GNU Lesser General Public License.
 
+This research project (or part of this research project) was conducted using computational resources (and/or scientific computing services) at the Maryland Advanced Research Computing Center ([MARCC](https://www.marcc.jhu.edu/)). The MARCC high-performance computing (HPC) environment utilizes the [SLURM](https://www.marcc.jhu.edu/getting-started/running-jobs/) queuing system for its parallel programming tasks. This code has _not_ been tested nor run on a personal machine.
+
 Contents:
 
 `Data`: Directory containing all of the data input needed in this paper, including district-level demographic and temperature deviation data, temperature projections from 2020 to 2039, temperature observations at BWI airport, and parameter values in each scenario for optimization and re-evaluation, respectively.
