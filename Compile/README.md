@@ -4,4 +4,6 @@ Also upload the `UHMOEA_ms.cpp` and makefile files to this folder. Then run make
 
 Once all files are prepared, run `make`.
 
-You might need to type in `chmod 755 UrbanHeatMPI` to get permission for using MPI on your machine. 
+You might need to type in `chmod 755 UrbanHeatMPI` to get permission for using MPI on your machine.
+
+Now, proceed to the `/Optimization` folder and consult the `README.md` in that directorty.
