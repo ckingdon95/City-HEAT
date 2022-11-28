@@ -15,7 +15,7 @@ Contents:
 
 `Data`: Directory containing all of the data input needed in this paper, including district-level demographic and temperature deviation data, temperature projections from 2020 to 2039, temperature observations at BWI airport, and parameter values in each scenario for optimization and re-evaluation, respectively.
 
-`Compile`: Directory containing code for Optimization and Borg source code. 
+`Compile`: Directory containing code for Optimization. 
 
 `Optimization`: Directory containing the code for optimizing the City-HEAT using DPS and Borg-MOEA
 
