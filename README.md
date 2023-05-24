@@ -1,5 +1,10 @@
 # City-HEAT
 
+Forked from original repository at https://github.com/SrayUM/City-HEAT.
+Branch `savio` includes modifications to run on Savio, Berkeley's HPC. 
+
+Original README:
+
 City-Heat Equity Adaptation Tool (C++, R, Bash)
 
 This repository contains all of the code used for the study described in the following working paper:
