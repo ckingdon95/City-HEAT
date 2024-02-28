@@ -1,10 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=FindMetrics_ma
-#SBATCH --ntasks=1				# Number of tasks per serial job (must be 1)
-#SBATCH -p parallel				# Queue name "standard" (serial)
-#SBATCH -t 2:00:00				# Run time per serial job (hh:mm:ss)
-#SBATCH --array=1-10				# Array of jobs to loop through
-#SBATCH --mail-type=ALL                  	# email at Begin and End of job
+#SBATCH --account=fc_anthofflab
+#SBATCH --partition=savio          				 			
+#SBATCH --nodes=1            					 		        
+#SBATCH --time=1:00:00      
 
 module load java
 
