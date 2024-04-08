@@ -1,7 +1,8 @@
 #!/bin/bash
+
 #SBATCH --job-name=RE_ReEvl_ma
 #SBATCH --account=fc_anthofflab
-#SBATCH --partition=savio          				 			
+#SBATCH --partition=savio_normal          				 			
 #SBATCH --nodes=1            					 		        
 #SBATCH --cpus-per-task=24		               				        
 #SBATCH --time=1:00:00   
