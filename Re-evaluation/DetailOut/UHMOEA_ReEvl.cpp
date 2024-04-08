@@ -58,7 +58,7 @@ int ClimModel;                                    // Scenario[][0]					   Climat
 int HWdef;                                        // Scenario[][1]                     Heat Wave Definition 
 double TR_tree, TR_CP, TR_CR;                     // Scenario[][2], [3], [4]           Temperature Reduction with Tree, CP, CR
 double CCuse, p_vage65, p_vpoor;                  // Scenario[][5], [6], [7]		   CC usage, % visitor>65, % visitor poor
-double alpha, beta;                               // Scneario[][8], [9]                % impervious to tree, spillover effect
+double alpha, beta0;                               // Scneario[][8], [9]                % impervious to tree, spillover effect
 double APG, AAR, APR, DisR;                       // Scneario[][10], [11], [12], [13]  Annual Population Growth, Annual Aging, Annual Poverty, Real Discount
 double HWRR_poor, HWRR_age65, HWRR_age64;         // Scneario[][14], [15], [16]        HWRR for poor, age>65, age<65;
 
@@ -408,7 +408,7 @@ void CityHEAT(double* vars, double* objs, double* constrs) {
 
 			int j = 0;
 			while ((adjacent[r][j] >= 0) && (j < 5)) {
-				temp_miti_spill[r][t] = temp_miti_spill[r][t] + beta * District[adjacent[r][j]][0] / District[r][0] * temp_miti[adjacent[r][j]][t];  // spillover effect
+				temp_miti_spill[r][t] = temp_miti_spill[r][t] + beta0 * District[adjacent[r][j]][0] / District[r][0] * temp_miti[adjacent[r][j]][t];  // spillover effect
 				j = j + 1;
 			}
 			temp_miti1[r][t] = temp_miti_spill[r][t] + temp_miti[r][t];  // spillover effect + original reduction 
@@ -714,7 +714,7 @@ int main(int argc, char* argv[]) {
 			ClimModel = (int)ScenMat[s][0]; HWdef = (int)ScenMat[s][1];
 			TR_tree = ScenMat[s][2]; TR_CP = ScenMat[s][3]; TR_CR = ScenMat[s][4];
 			CCuse = ScenMat[s][5]; p_vage65 = ScenMat[s][6]; p_vpoor = ScenMat[s][7];
-			alpha = ScenMat[s][8]; beta = ScenMat[s][9];
+			alpha = ScenMat[s][8]; beta0 = ScenMat[s][9];
 			APG = ScenMat[s][10]; AAR = ScenMat[s][11]; APR = ScenMat[s][12]; DisR = ScenMat[s][13];
 			HWRR_poor = ScenMat[s][14]; HWRR_age65 = ScenMat[s][15]; HWRR_age64 = ScenMat[s][16];
 			CityHEAT(vars, objs, 0);    // unconstrained problem  
