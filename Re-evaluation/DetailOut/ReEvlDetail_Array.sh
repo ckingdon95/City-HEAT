@@ -1,10 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=RE_ReEvl_ma
-#SBATCH --ntasks=1				           # Number of tasks per serial job (must be 1)
-#SBATCH --partition=lrgmem				           # Queue name "standard" (serial)
-#SBATCH -t 10:00:00				           # Run time per serial job (hh:mm:ss)
+#SBATCH --account=fc_anthofflab
+#SBATCH --partition=savio          				 			
+#SBATCH --nodes=1            					 		        
+#SBATCH --cpus-per-task=24		               				        
+#SBATCH --time=1:00:00   
 #SBATCH --array=1-166			                   # Array of jobs to loop through
-#SBATCH --mail-user=rshi8@jhu.edu   		           # address for email notification
+#SBATCH --mail-user=ckingdon@berkeley.edu  		           # address for email notification
 #SBATCH --mail-type=ALL                    		   # email at Begin and End of job
 
 
